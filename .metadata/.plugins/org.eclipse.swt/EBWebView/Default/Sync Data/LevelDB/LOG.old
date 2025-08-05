@@ -1,2 +1,3 @@
-2025/08/05-16:39:14.338 6840 Creating DB C:\Github\226-7-CP353201-LAB7\Lab7\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB since it was missing.
-2025/08/05-16:39:14.346 6840 Reusing MANIFEST C:\Github\226-7-CP353201-LAB7\Lab7\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/08/05-20:45:38.820 4d10 Reusing MANIFEST C:\Github\226-7-CP353201-LAB7\Lab7\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2025/08/05-20:45:38.822 4d10 Recovering log #3
+2025/08/05-20:45:38.822 4d10 Reusing old log C:\Github\226-7-CP353201-LAB7\Lab7\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Sync Data\LevelDB/000003.log 

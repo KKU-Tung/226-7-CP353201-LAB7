@@ -1,0 +1,43 @@
+package sqa.test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Arrays;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+
+import sqa.main.CountWordClumps;
+
+class  C_DCtest {
+	CountWordClumps test;
+
+	@BeforeEach
+	void setup() {
+		test = new CountWordClumps();
+	}
+
+	@ParameterizedTest
+	@CsvSource({
+		", 0",
+		"'', 0",
+		"'1', 0",
+		"'1 1', 1",
+		"'2 3', 0",
+		"'3 3 4', 1"
+	})
+	void C_DC_test(String numsStr, int expected) {
+		int[] nums = parseStringToIntArray(numsStr);
+		assertEquals(expected, CountWordClumps.countClumps(nums));
+	}
+
+	private int[] parseStringToIntArray(String str) {
+		if (str == null || str.isBlank()) {
+			return null;
+		}
+		return Arrays.stream(str.trim().split("\\s+"))
+					 .mapToInt(Integer::parseInt)
+					 .toArray();
+	}
+}

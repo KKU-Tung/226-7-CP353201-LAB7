@@ -21,7 +21,7 @@ class C_DCtest{
 
 	@ParameterizedTest
 	@MethodSource("testcase")
-	void test_0anch_and_Condition_Coverage(int[] nums, int expected) {
+	void C_DC_wordclumps_test(int[] nums, int expected) {
 		assertEquals(expected, CountWordClumps.countClumps(nums));
 	}
 
